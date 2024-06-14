@@ -1,78 +1,69 @@
 /* Additional CSS styles */
 body {
-    font-family: "raleway", sans-serif;
-font-weight: 500;
-font-style: normal;
-    background-image: url('images/bg.png');
-    background-size:cover ;
+  font-family: "raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-image: url('images/bg.png');
+  background-size:cover ;
   }
-  
   .header-section img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   }
-  
   .event-section {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   }
-  
   .event {
-    flex-basis: 100%;
-    margin-bottom: 20px;
+  flex-basis: 100%;
+  margin-bottom: 20px;
   }
-
   .border-transparent {
-    border-bottom: #5e2f64(0, 0, 0, 0.072);
+  border-bottom: #5e2f64(0, 0, 0, 0.072);
   }
-  
   .event h2 {
-    font-family: "hothouse", sans-serif;
-font-weight: 700;
-font-style: normal;
+  font-family: "hothouse", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   }
-  
   .event p {
-    font-family: "raleway", sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-family: "raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   }
-
   strong{
-    color: #5e2f64;
-    font-weight: 700;
+  color: #5e2f64;
+  font-weight: 700;
   }
-  
   .event a.btn {
-    font-family: "raleway", sans-serif;
-font-weight: 500;
-font-style: normal;
-background-color: #d8328a;
-color: white;
+  font-family: "raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #d8328a;
+  color: white;
   }
-
   .event a.btn:hover {
-background-color: #5e2f64;
+  background-color: #5e2f64;
   }
-  
   .footer {
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
   }
-  
+  .footer p{
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
   .social-icons img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
   }
-
-hr{
-    margin-right: 20em;
-    margin-left: 20em;
-    margin-bottom: 2em;
-}
-  
+  hr{
+  margin-right: 20em;
+  margin-left: 20em;
+  margin-bottom: 2em;
+  }
