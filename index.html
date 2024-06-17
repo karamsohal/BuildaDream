@@ -1,239 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Dream Week October 2024</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link rel="stylesheet" href="https://use.typekit.net/itx1plx.css">
-      <link rel="stylesheet" href="vstyle.css">
-   </head>
-   <body>
-      <section class="header-section">
-         <div class="container">
-            <a href="index.html"><img src="images/header.png" alt="Header Image"></a>
-         </div>
-      </section>
-      <section class="main-section mt-4 mb-2">
-         <div class="container">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Week October 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/itx1plx.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="script.js"></script>
+    <style>
+        .accordion-button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .accordion-button::after {
+            display: none;
+        }
+        .accordion-item {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header-section">
+        <div class="container">
+            <a href="index.html"><img src="header.jpg" alt="Header Image"></a>
+        </div>
+    </section>
+
+    <section class="main-section mt-4 mb-2">
+        <div class="container">
             <div class="row">
-               <div class="col-md-7">
-                  <div class="event-section">
-                     <div class="event my-4">
-                        <h2>Dreamer Day Fest</h2>
-                        <p>October 22 @ 9:30 AM - 2:00 PM</p>
-                        <p><strong>Enercare Centre:</strong> 1-100 Princes' Blvd, Toronto, ON, Canada</p>
-                        <p>DREAM BIG at our 3rd Annual Dreamer Day<br><br>
-                           Dreamer Day Fest celebrates female empowerment, originating from the UN’s International Day of the Girl. Now a vibrant festival at Toronto's Enercare Centre, it empowers female students in trades, STEAM, emergency response, entrepreneurship, and leadership.<br><br>
-                           Join us to explore interactive exhibitor booths, career opportunities, and industry insights. Enjoy dynamic keynotes, engaging panels, and live entertainment. Capture memories at our Instagram-worthy photo stations and ignite your passion for the future!
-                        </p>
-                        <a href="https://www.dreamerday.ca/" class="btn btn-custom">Dreamer Day</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-5 d-flex justify-content-md-end">
-                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <img src="images/dd1@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 1">
+                <div class="col-md-4    ">
+                    <!-- Accordion Section -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <img src="Accordion1.jpg" class="accordion-img rounded" alt="Event Image 1">
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>October 22 @ 9:30 AM - 2:00 PM</p>
+                                    <p><strong>Enercare Centre:</strong> 1-100 Princes' Blvd, Toronto, ON, Canada</p>
+                                    <p>DREAM BIG at our 3rd Annual Dreamer Day...</p>
+                                    <a href="https://www.dreamerday.ca/" class="btn btn-custom">Dreamer Day</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <img src="images/dd2@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="Accordion2.jpg" class="accordion-img rounded" alt="Event Image 2">
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>October 22 @ 6:00 AM - 10:00 PM</p>
+                                    <p><strong>Palais Royale:</strong> 1601 Lake Shore Blvd. West, Toronto, ON</p>
+                                    <p>We invite everyone to join our 3rd annual Afterglow party...</p>
+                                    <a href="https://www.webuildadream.com/event/afterglow/" class="btn btn-custom">Afterglow</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <img src="images/dd3@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <img src="Accordion3.jpg" class="accordion-img rounded" alt="Event Image 3">
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>October 23 @ 11:00 PM - 5:00 PM</p>
+                                    <p><strong>Enercare Centre:</strong> 1-100 Princes' Blvd, Toronto, ON, Canada</p>
+                                    <p>Unlock Your Future: A Gateway to the Skilled Trades...</p>
+                                    <a href="https://www.webuildadream.com/event/your-hired/" class="btn btn-custom">You're Hired</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <img src="images/dd4@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <img src="Accordion4.jpg" class="accordion-img rounded" alt="Event Image 4">
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>October 24 @ 1:00 PM - 4:00 PM</p>
+                                    <p><strong>Metro Toronto Convention Centre:</strong> 255 Front St W, Toronto, ON, Canada</p>
+                                    <p>Join us for an inspiring afternoon of keynote speakers and networking...</p>
+                                    <a href="https://www.dreamerday.ca/" class="btn btn-custom">Keynote Session</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <img src="images/dd5@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 5">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/dd6@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 6">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/dd7@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 7">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/dd8@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 8">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <hr>
-      <section class="main-section mt-2 mb-2">
-         <div class="container">
-            <div class="row align-items-start">
-               <div class="col-md-7 order-md-2 text-end">
-                  <div class="event-section">
-                     <div class="event my-4">
-                        <h2>Afterglow</h2>
-                        <p class="text-end">October 22 @ 6:00 AM - 10:00 PM</p>
-                        <p class="text-end"><strong>Palais Royale:</strong> 1601 Lake Shore Blvd. West, Toronto, ON</p>
-                        <p class="text-end">We invite everyone to join of for our 3rd annual Afterglow party!<br><br>
-                           Have you ever envisioned an event where you can engage in uninhibited expression of dance, enjoy the rhythms of a professional DJ, partake in high-quality beverages, and savor gourmet food, all while networking with industry peers? We are pleased to announce the upcoming Afterglow Party, an event designed to redefine professional networking. We look forward to your participation.<br><br>
-                           Let us know you’re joining!
-                        </p>
-                        <a href="https://www.webuildadream.com/event/afterglow/" class="btn btn-custom">Afterglow</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-5 order-md-1">
-                  <div class="d-flex justify-content-md-end">
-                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
+                    </div>
+                    <!-- Add more accordion items as needed -->
+                </div>
+                <div class="col-md-8">
+                    <!-- Carousel Section -->
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <img src="images/ag1@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 1">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag2@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 2">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag3@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 3">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag4@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 4">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag5@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 5">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag6@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 6">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag7@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 7">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag8@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 8">
-                           </div>
+                            <div class="carousel-item active">
+                                <img src="banner1.jpg" class="d-block w-100 rounded" alt="Event Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="banner2.jpg" class="d-block w-100 rounded" alt="Event Image 2">
+                            </div>
+                            <!-- Add more carousel items as needed -->
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <hr>
-      <section class="main-section mt-4 mb-2">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-7">
-                  <div class="event-section">
-                     <div class="event my-4">
-                        <h2>You're Hired</h2>
-                        <p>October 23 @ 11:00 PM - 5:00 PM</p>
-                        <p><strong>Enercare Centre:</strong> 1-100 Princes' Blvd, Toronto, ON, Canada</p>
-                        <p>Unlock Your Future: A Gateway to the Skilled Trades<br><br>
-                           Join us at the Enercare Centre in Toronto to explore opportunities in the skilled trades sector. Connect with leading companies, including energy firms and manufacturers, ask questions, and meet potential employers face-to-face. This event offers valuable insights and networking opportunities for women in skilled trades. Tickets are free for job seekers, with 3,000 available. Don’t miss this chance to advance your career! We look forward to seeing you there!
-                        </p>
-                        <a href="https://www.webuildadream.com/event/your-hired/" class="btn btn-custom">You're Hired</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-5 d-flex justify-content-md-end">
-                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2200">
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <img src="images/ex1@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 1">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex2@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 2">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex3@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 3">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex4@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 4">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex5@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 5">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex6@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 6">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex7@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 7">
-                        </div>
-                        <div class="carousel-item">
-                           <img src="images/ex8@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 8">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <hr>
-      <section class="main-section mt-2 mb-2">
-         <div class="container">
-            <div class="row align-items-start">
-               <div class="col-md-7 order-md-2 text-end">
-                  <div class="event-section">
-                     <div class="event my-4">
-                        <h2>Dream & Build</h2>
-                        <p class="text-end">October 22 @ 6:00 AM - 10:00 PM</p>
-                        <p class="text-end"><strong>Palais Royale:</strong> 1601 Lake Shore Blvd. West, Toronto, ON</p>
-                        <p class="text-end">We invite everyone to join of for our 3rd annual Afterglow party!<br><br>
-                           Have you ever envisioned an event where you can engage in uninhibited expression of dance, enjoy the rhythms of a professional DJ, partake in high-quality beverages, and savor gourmet food, all while networking with industry peers? We are pleased to announce the upcoming Afterglow Party, an event designed to redefine professional networking. We look forward to your participation.<br><br>
-                           Let us know you’re joining!
-                        </p>
-                        <a href="https://www.webuildadream.com/event/dreamer-day-3/" class="btn btn-custom">Dream & Build</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-5 order-md-1">
-                  <div class="d-flex justify-content-md-end">
-                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2300">
-                        <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <img src="images/ag1@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 1">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag2@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 2">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag3@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 3">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag4@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 4">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag5@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 5">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag6@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 6">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag7@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 7">
-                           </div>
-                           <div class="carousel-item">
-                              <img src="images/ag8@150x-100.jpg" class="d-block w-100 rounded" alt="Event Image 8">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <footer class="footer">
-         <div class="container">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
             <div class="social-icons text-center py-3">
-               <a href="https://www.instagram.com/webuildadream/"><img src="images/Instagram-8.png" alt="Instagram"></a> 
-               <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FWeBuildADream"><img src="images/Twitter-8.png" alt="Twitter"></a> 
-               <a href="https://www.tiktok.com/@webuildadream"><img src="images/Tiktok-8.png" alt="TikTok"></a> 
-               <a href="https://www.youtube.com/channel/UCyyrhVit2LoGN2SL_TLbtxA"><img src="images/YouTube-8.png" alt="YouTube"></a> 
-               <a href="https://www.linkedin.com/company/webuildadream/"><img src="images/LinkedIn-8.png" alt="LinkedIn"></a> 
-               <a href="https://www.facebook.com/WEbuildadream/"><img src="images/FaceBook-8.png" alt="Facebook"></a>
-               <p>&copy; 2024 Dream Week. All rights reserved by Build A Dream.</p>
+                <a href="https://www.instagram.com/webuildadream/"><img src="Instagram-8.png" alt="Instagram"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FWeBuildADream"><img src="Twitter-8.png" alt="Twitter"></a>
+                <a href="https://www.tiktok.com/@webuildadream"><img src="Tiktok-8.png" alt="TikTok"></a>
+                <a href="https://www.youtube.com/channel/UCyyrhVit2LoGN2SL_TLbtxA"><img src="YouTube-8.png" alt="YouTube"></a>
+                <a href="https://www.linkedin.com/company/webuildadream/"><img src="LinkedIn-8.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/WEbuildadream/"><img src="FaceBook-8.png" alt="Facebook"></a>
+                <p>&copy; 2024 Dream Week. All rights reserved by Build A Dream.</p>
             </div>
-         </div>
-      </footer>
-   </body>
+        </div>
+    </footer>
+</body>
+
 </html>
