@@ -11,126 +11,112 @@ body {
     object-fit: cover;
     }
     .footer {
-        text-align: center;
-        position: sticky;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f9fa;
-        }
-        .footer p{
-            margin-top: 1em;
-            margin-bottom: 0;
-          }
-          .social-icons img {
-          width: 40px;
-          height: auto;
-          margin-right: 10px;
-          } 
-          hr{   
-          margin-right: 20em;
-          margin-left: 20em;
-          margin-bottom: 2em;
-          }
-
-          .accordion-item {
-            margin-bottom: 20px;
-         }
-         
-         .accordion-img {
-            width: 100%;
-            cursor: pointer;
-         }
-          .accordion-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .accordion-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-        
-        
-        .accordion-trigger {
-            width: 100%;
-            cursor: pointer;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-        
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            padding: 0 15px;
-        }
-        
-        .accordion-content p {
-            margin: 15px 0;
-        }
-
-        .accordion-button {
-            background: none;
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
-        .accordion-button::after {
-            display: none;
-        }
-        .accordion-item {
-            border: none;
-        }
-
-        strong{
-            color: #5e2f64;
-            font-weight: 700;
-            }
-
-            .accordion-collapse collapse {
-                display: flex;
-                flex-wrap: wrap;
-                }
-                .accordion-body {
-                flex-basis: 100%;
-                margin-bottom: 20px;
-                }
-                .accordion-body p {
-                font-family: "raleway", sans-serif;
-                font-weight: 500;
-                font-style: normal;
-                }
-
-                .accordion-body a.btn {
-                    font-family: "raleway", sans-serif;
-                    font-weight: 500;
-                    font-style: normal;
-                    background-color: #d8328a;
-                    color: white;
-                    }
-                    .accordion-body a.btn:hover {
-                    background-color: #5e2f64;
-                    }
-
-                    .carousel-item {
-                        position: relative;
-                    }
-            
-                    .carousel-item .btn-custom {
-                        position: absolute;
-                        bottom: 20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        z-index: 10;
-                        background-color: #f9d467;
-                        color: #5e2f64;
-                    }
-
-                    .carousel-item .btn-custom:hover{
-                        font-weight: 500;
-                        background-color: white;
-                        color: #5e2f64;
-                    }
+    text-align: center;
+    position:sticky ;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    }
+    .footer p{
+    margin-top: 1em;
+    margin-bottom: 0;
+    }
+    .social-icons img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    } 
+    hr{   
+    margin-right: 20em;
+    margin-left: 20em;
+    margin-bottom: 2em;
+    }
+    .accordion-item {
+    margin-bottom: 20px;
+    }
+    .accordion-img {
+    width: 100%;
+    cursor: pointer;
+    }
+    .accordion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+    .accordion-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    }
+    .accordion-trigger {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.3s ease;
+    }
+    .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    }
+    .accordion-content p {
+    margin: 15px 0;
+    }
+    .accordion-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    }
+    .accordion-button::after {
+    display: none;
+    }
+    .accordion-item {
+    border: none;
+    }
+    strong{
+    color: #5e2f64;
+    font-weight: 700;
+    }
+    .accordion-collapse collapse {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .accordion-body {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    }
+    .accordion-body p {
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+    .accordion-body a.btn {
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #d8328a;
+    color: white;
+    }
+    .accordion-body a.btn:hover {
+    background-color: #5e2f64;
+    }
+    .carousel-item {
+    position: relative;
+    }
+    .carousel-item .btn-custom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: #f9d467;
+    color: #5e2f64;
+    }
+    .carousel-item .btn-custom:hover{
+    font-weight: 500;
+    background-color: white;
+    color: #5e2f64;
+    }
