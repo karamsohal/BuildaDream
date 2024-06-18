@@ -72,6 +72,19 @@ body {
             margin: 15px 0;
         }
 
+        .accordion-button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .accordion-button::after {
+            display: none;
+        }
+        .accordion-item {
+            border: none;
+        }
+
         strong{
             color: #5e2f64;
             font-weight: 700;
@@ -100,4 +113,24 @@ body {
                     }
                     .accordion-body a.btn:hover {
                     background-color: #5e2f64;
+                    }
+
+                    .carousel-item {
+                        position: relative;
+                    }
+            
+                    .carousel-item .btn-custom {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 10;
+                        background-color: #f9d467;
+                        color: #5e2f64;
+                    }
+
+                    .carousel-item .btn-custom:hover{
+                        font-weight: 500;
+                        background-color: white;
+                        color: #5e2f64;
                     }
