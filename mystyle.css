@@ -2,7 +2,8 @@ body {
     font-family: "raleway", sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-image: url('bg.jpg');
+    /* background-image: url('bg.jpg'); */
+    background-image: url('bg_plain_white.png');
     background-size:cover ;
     }
     .header-section img {
@@ -15,9 +16,10 @@ body {
     position:sticky ;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-image: url(footer.jpg);
     }
     .footer p{
+    color: white;
     margin-top: 1em;
     margin-bottom: 0;
     }
@@ -117,6 +119,22 @@ body {
     }
     .carousel-item .btn-custom:hover{
     font-weight: 500;
-    background-color: white;
-    color: #5e2f64;
+    background-color: #5e2f64;
+    color: white;
+    }
+    .rotating-image {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    }
+    #image1 {
+    top: 20%;
+    left: -4%;
+    transform: translate(-30%, -30%);
+    }
+    #image2 {
+    top: 60%;
+    left: 104.5%;
+    transform: translate(-70%, -70%);
     }
