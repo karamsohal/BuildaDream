@@ -82,6 +82,9 @@ body {
     color: #5e2f64;
     font-weight: 700;
     }
+    aside strong{
+        font-size: 1.3em;
+        }
     .accordion-collapse collapse {
     display: flex;
     flex-wrap: wrap;
