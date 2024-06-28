@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     accordionButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             var target = document.querySelector(button.getAttribute('data-bs-target'));
-            var isCurrentlyExpanded = button.getAttribute('aria-expanded') === 'true';
+            // var isCurrentlyExpanded = button.getAttribute('aria-expanded') === 'true';
 
             // Close all accordion items first
             accordionButtons.forEach(function (otherButton) {
