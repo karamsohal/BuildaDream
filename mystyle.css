@@ -4,7 +4,7 @@ body {
     font-style: normal;
     /* background-image: url('bg.jpg'); */
     background-image: url('bg_plain_white.png');
-    background-size:cover ;
+    background-size:con ;
     }
     .header-section img {
     width: 100%;
@@ -16,7 +16,7 @@ body {
     bottom: 0;
     width: 100%;
     background-image: url(footer.jpg);
-    position: sticky;
+    position:absolute ;
     }
     .footer p{
     color: white;
