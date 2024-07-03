@@ -44,3 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
     image2.style.transform = `translate(-70%, -70%) rotate(${angle2}deg)`;
     }, speed2);
     });
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".btn-custom");
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const url = button.getAttribute("href");
+                window.open(url, "_blank");
+            });
+        });
+    });
