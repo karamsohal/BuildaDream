@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     //Event listener for redirecting the button link to email Lisa with the content
     document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".btn-custom");
-    buttons.forEach(function(button) {
-    button.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    const url = button.getAttribute("href");
-    if (url.startsWith("mailto:")) {
-    window.location.href = url; // Use location.href for mailto links
-    } else {
-    window.open(url, "_blank"); // Open other links in a new window
-    }
-    });
-    });
-    });
+        const buttons = document.querySelectorAll(".btn-custom");
+        buttons.forEach(function(button) {
+        button.addEventListener("click", function(event) {
+        event.preventDefault();
+        const url = button.getAttribute("href");
+        if (url.startsWith("mailto:")) {
+        window.location.href = url;
+        } else {
+        window.open(url, "_blank");
+        }
+        });
+        });
+        });
