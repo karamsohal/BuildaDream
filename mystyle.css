@@ -129,7 +129,7 @@ body {
         bottom: 0;
         width: 100%;
         background-image: url(footer.jpg);
-        position:fixed;
+        display: flex;
         }
         .footer p{
         color: white;
