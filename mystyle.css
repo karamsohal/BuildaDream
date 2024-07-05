@@ -136,7 +136,7 @@ body {
     transform: translate(-70%, -70%);
     }
     .footer {
-        position: absolute;
+        position: sticky;
 
         text-align: center;
         bottom: 0;
