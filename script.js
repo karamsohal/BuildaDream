@@ -1,29 +1,137 @@
 //Event listener to create open/close funtion for accordions
 document.addEventListener('DOMContentLoaded', function () {
-    var accordionButtons = document.querySelectorAll('.accordion-button');
-    accordionButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-    var target = document.querySelector(button.getAttribute('data-bs-target'));
-    // var isCurrentlyExpanded = button.getAttribute('aria-expanded') === 'true';
-    // Close all accordion items
-    accordionButtons.forEach(function (otherButton) {
-    var otherTarget = document.querySelector(otherButton.getAttribute('data-bs-target'));
-    if (otherButton !== button && otherButton.getAttribute('aria-expanded') === 'true') {
-    otherTarget.classList.remove('show');
-    otherButton.setAttribute('aria-expanded', 'false');
-    }
+    let temp = 0;
+    let button1 = document.getElementById('button1')
+    let button2 = document.getElementById('button2');
+    let button3 = document.getElementById('button3');
+    let button4 = document.getElementById('button4');
+    let div1 = document.getElementById('collapseOne');
+    let div2 = document.getElementById('collapseTwo');
+    let div3 = document.getElementById('collapseThree');
+    let div4 = document.getElementById('collapseFour');
+    let footer = document.getElementById('footer');
+  
+    button1.addEventListener("click", function() {
+        if(temp===0) {
+            div1.classList.add("show");
+            temp = 1;
+        } else if(temp===1){
+            div1.classList.remove("show");
+            temp = 0;
+        } else if(temp===2) {
+            div2.classList.remove("show");
+            div1.classList.add("show");
+            temp = 1;
+        } else if(temp===3) {
+            div3.classList.remove("show");
+            div1.classList.add("show");
+            temp = 1;
+        } else if(temp===4) {
+            div4.classList.remove("show");
+            div1.classList.add("show");
+            temp = 1;
+        }
+
+        if(temp===0) {
+            footer.classList.add('position-value');
+        }
+        else {
+            footer.classList.remove('position-value');
+        }
     });
-    // Toggle current accordion item
-    if (isCurrentlyExpanded) {
-    target.classList.remove('show');
-    button.setAttribute('aria-expanded', 'false');
-    } else {
-    target.classList.add('show');
-    button.setAttribute('aria-expanded', 'true');
-    }
+    button2.addEventListener("click", function() {
+        if(temp===0) {
+            div2.classList.add("show");
+            temp = 2;
+        } else if(temp===1){
+            div1.classList.remove("show");
+            div2.classList.add("show");
+            temp = 2;
+        } else if(temp===2) {
+            div2.classList.remove("show");
+            temp = 0;
+        } else if(temp===3) {
+            div3.classList.remove("show");
+            div2.classList.add("show");
+            temp = 2;
+        } else if(temp===4) {
+            div4.classList.remove("show");
+            div2.classList.add("show");
+            temp = 2;
+        }
+
+        if(temp===0) {
+            footer.classList.add('position-value');
+        }
+        else {
+            footer.classList.remove('position-value');
+        }
     });
+    button3.addEventListener("click", function() {
+        if(temp===0) {
+            div3.classList.add("show");
+            temp = 3;
+        } else if(temp===1){
+            div1.classList.remove("show");
+            div3.classList.add("show");
+            temp = 3;
+        } else if(temp===2) {
+            div2.classList.remove("show");
+            div3.classList.add("show");
+            temp = 3;
+        } else if(temp===3) {
+            div3.classList.remove("show");
+            temp = 0;
+        } else if(temp===4) {
+            div4.classList.remove("show");
+            div3.classList.add("show");
+            temp = 3;
+        }
+
+        if(temp===0) {
+            footer.classList.add('position-value');
+        }
+        else {
+            footer.classList.remove('position-value');
+        }
     });
+    button4.addEventListener("click", function() {
+        if(temp===0) {
+            div4.classList.add("show");
+            temp = 4;
+        } else if(temp===1){
+            div1.classList.remove("show");
+            div4.classList.add("show");
+            temp = 4;
+        } else if(temp===2) {
+            div2.classList.remove("show");
+            div4.classList.add("show");
+            temp = 4;
+        } else if(temp===3) {
+            div3.classList.remove("show");
+            div3.classList.add("show");
+            temp = 4;
+        } else if(temp===4) {
+            div4.classList.remove("show");
+            temp = 0;
+        }
+
+        if(temp===0) {
+            footer.classList.add('position-value');
+        }
+        else {
+            footer.classList.remove('position-value');
+        }
     });
+      if(div1.classList.contains('show') || div2.classList.contains('show') || div3.classList.contains('show') || div4.classList.contains('show')) {
+        console.log("0");
+        footer.classList.remove('position-value');
+      } else {
+        console.log("1");
+        footer.classList.add('position-value');
+      }
+    });
+  
     //Event listener to rotate the doodads
     document.addEventListener('DOMContentLoaded', function () {
     const image1 = document.getElementById('image1');
